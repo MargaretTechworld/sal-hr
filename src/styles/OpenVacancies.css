@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.company-logo-div {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  padding: 1%;
+}
+
+.logo {
+  width: 30%;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgb(50, 50, 223);
+}
+
+.horizontal-rule {
+  background-color: rgb(19, 19, 49);
+  height: 0.05px;
+  width: 100%;
+}
+
+.vancacy-search {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.vancacy-search a {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.vancacy-search h2 {
+  font-size: 1.3rem;
+  margin-bottom: 2%;
+  margin-top: 2px;
+}
+
+.vancacy-search-details {
+  padding: 8% 4%;
+  border: 0.2px solid rgb(151, 148, 148);
+  display: flex;
+  flex-direction: column;
+}
+
+.vancacy-input {
+  height: 40px;
+  width: 100%;
+  border: 0.2px solid rgb(151, 148, 148);
+  padding: 2%;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-icon-div {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: rgb(175, 170, 170);
+  height: 36px;
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  border: 0.2px solid rgb(151, 148, 148);
+  align-items: center;
+}
+
+.vancacy-search-details p {
+  margin-bottom: 3%;
+}
+
+.vacancy-sort {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-container {
+  width: 95%;
+}
+
+.vacancy-sort h2 {
+  align-self: flex-start;
+  font-size: 1.3rem;
+}
+
+.filter-div {
+  margin-top: 3%;
+  padding: 1% 2%;
+}
+
+.filter-div h3 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.vacancy-type {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  padding: 3% 0%;
+  border-bottom: 0.1px solid rgb(151, 148, 148);
+}
+
+.vacancy-type:hover {
+  background-color: rgb(175, 174, 174);
+}
+
+.vacancy-type-arrow {
+  font-size: 3rem;
+}
+
+.search-result {
+  padding: 4%;
+}
