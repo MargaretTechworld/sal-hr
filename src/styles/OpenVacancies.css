@@ -3,12 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.vacancy-container{
+      background-color: rgb(255, 255, 255);
+}
 
 .company-logo-div {
   display: flex;
   align-items: center;
   gap: 2%;
   padding: 1%;
+}
+.logo-name-div p{
+color: rgb(50, 50, 223);
+font-size:1.1rem ;
+margin-top: 1%;
 }
 
 .logo {
@@ -57,6 +65,7 @@
   width: 100%;
   border: 0.2px solid rgb(151, 148, 148);
   padding: 2%;
+  outline: none;
 }
 
 .search-input {
@@ -74,6 +83,11 @@
   justify-content: center;
   border: 0.2px solid rgb(151, 148, 148);
   align-items: center;
+  cursor: pointer;
+}
+.search-icon-div:hover{
+  background-color: rgb(97, 96, 96);
+  color: white;
 }
 
 .vancacy-search-details p {
@@ -113,6 +127,7 @@
   height: 55px;
   padding: 3% 0%;
   border-bottom: 0.1px solid rgb(151, 148, 148);
+  cursor: pointer;
 }
 
 .vacancy-type:hover {
@@ -125,4 +140,103 @@
 
 .search-result {
   padding: 4%;
+}
+
+.filter-type {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.filter-type:hover {
+  background-color: rgb(175, 174, 174);
+}
+
+.filter-arrow {
+  font-size: 3rem;
+}
+
+.filter-list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.filter-list li {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.filter-list input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: rgb(50, 50, 223);
+}
+
+
+.salary-filter {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.salary-filter label {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.salary-filter input[type="number"] {
+  padding: 6px;
+  margin-bottom: 8px;
+  width: 80%;
+  border: 1px solid rgb(151, 148, 148);
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo{
+    width: 10%;
+  }
+  .vacancy-container{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.08);
+  }
+  .vancacy-search-details{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4%;
+    align-items: baseline;
+     padding: 1% 2%;
+  }
+  .search-input{
+    width: 60%;
+     justify-self: right;
+  }
+
+.second-vac {
+  width: 100%;
+    display: flex;
+}
+
+.filter-div {
+    width: 50%;
+}
+.filter-type{
+  align-items: center;
+}
+.company-logo-div{
+justify-content: center;
+}
+.search-icon-div{
+width: 9%;
+}
+
 }
