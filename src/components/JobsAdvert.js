@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/JobsAdvert.css';
 import vacancy from './data/vacancy';
 
@@ -7,9 +8,9 @@ const JobsAdvert = () => (
     {vacancy.map((item) => (
       <div key={item.id} className="job-card">
         <div className="job-header">
-          <a href="#" className="job-title">
+          <Link to="/jobDetails" className="job-title">
             <h2>{item.JobTitle}</h2>
-          </a>
+          </Link>
           <p className="date-posted">
             <strong>Date Posted: </strong>
             {item.PostingDate}
@@ -19,9 +20,10 @@ const JobsAdvert = () => (
         <div className="job-description">
           <p>
             {item.Description}
-            <a href="#" className="read-more">
+
+            <Link to="/jobDetails" className="read-more">
               Read more
-            </a>
+            </Link>
           </p>
         </div>
 
@@ -47,7 +49,9 @@ const JobsAdvert = () => (
               {item.Departmet}
             </p>
           </div>
-          <button type="button" className="apply-btn">Apply</button>
+          <button type="button" className="apply-btn">
+            Apply
+          </button>
         </div>
       </div>
     ))}
